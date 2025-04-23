@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'journalapp'
-        CONTAINER_NAME = 'journalapp-container'
+        IMAGE_NAME = 'devopsproject'
+        CONTAINER_NAME = 'devopsproject-container'
         DOCKERHUB_USER = 'dnyaneshwar432'  
     }
 
