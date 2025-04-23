@@ -44,7 +44,7 @@ pipeline {
         // Optional stage to push image to DockerHub (needs credentials)
         stage('Push to DockerHub') {
             when {
-                expression { return env.DOCKERHUB_USER != 'dnyaneshwar432' }
+                expression { return env.DOCKERHUB_USER == 'dnyaneshwar432' }
             }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
