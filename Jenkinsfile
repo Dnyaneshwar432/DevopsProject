@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'journalapp'
         CONTAINER_NAME = 'journalapp-container'
-        DOCKERHUB_USER = 'dnyaneshwar432'  // Change this if pushing to DockerHub
+        DOCKERHUB_USER = 'dnyaneshwar432'  
     }
 
     stages {
