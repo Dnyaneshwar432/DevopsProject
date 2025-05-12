@@ -7,7 +7,9 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ input: userInput })
+                body: JSON.stringify({ input: userInput,
+                                       devtools:tools
+                                     })
             })
             .then(response => response.json())
             .then(data => {

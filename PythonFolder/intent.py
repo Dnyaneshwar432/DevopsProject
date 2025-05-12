@@ -7,9 +7,11 @@ app = Flask(__name__)
 def run_python():
     data = request.json
     user_input = data.get('input', '')
+    user_tools= data.get('devtools', '')
 
-    # Call external Python script with user input
-    process = subprocess.Popen(['python3', 'my_script.py', user_input],
+
+# Call external Python script with user input
+    process = subprocess.Popen(['python3', 'my_script.py', user_input,user_tools],
                                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, error = process.communicate()
 
