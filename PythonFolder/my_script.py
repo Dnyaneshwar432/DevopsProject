@@ -1,6 +1,5 @@
 import sys
 
-from sympy.physics.units import action
 from transformers import pipeline
 
 if len(sys.argv) < 2:
