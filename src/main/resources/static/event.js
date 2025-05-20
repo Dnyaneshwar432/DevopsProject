@@ -22,31 +22,10 @@
             .catch(error => {
                 console.error("Error:", error);
             });
+
+
         }
 
-function sendData1(){
 
-const name = document.getElementById("searchbar").value;
-
-        fetch('/api/journal/run-command',{
-
-            method:'POST',
-            headers: {
-                'Content-Type':'application/json'
-            },
-            body:JSON.stringify({ name: name })
-        })
-            .then(response => response.text())
-            .then(data => alert(data));
-
-
-
-
-
-
-
-
-
-}
 
 

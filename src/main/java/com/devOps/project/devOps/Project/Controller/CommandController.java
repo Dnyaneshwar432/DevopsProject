@@ -2,6 +2,7 @@ package com.devOps.project.devOps.Project.Controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.BufferedReader;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 @RestController
+@RequestMapping("/api/v1")
 public class CommandController {
 
     @GetMapping("/run-command")
